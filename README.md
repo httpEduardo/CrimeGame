@@ -5,11 +5,6 @@ Kotlin DSL para escrever histórias de crimes durante a programação.
 Deixe uma estrela, se você gostaria de ver este projeto e escrever sua própria história de crime!
 
 Projeto está em andamento.
-Fique atento aos tutoriais sobre Kotlin / DSL / orientado a eventos e fornecimento de eventos e siga-me no dev.to:
-https://dev.to/mateusznowak
-
-Se você fala polonês, assine minha lista de e-mails para saber mais:
-https://zycienakodach.pl/lista-mailingowa
 
 Vamos ver um exemplo de como você testaria suas histórias:
 
