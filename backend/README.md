@@ -1,47 +1,47 @@
-Endpoints:
+pontos finais:
 
 
-**POST: investigations/{investigationId}/detectives/{detectiveId}/commands**
-Pozwala wyslac komende.
+**POST: investigações/{investigationId}/detectives/{detectiveId}/commands**
+Permite enviar comandos.
 
 
-**GET: investigations/{investigationId}/detectives/{detectiveId}/locations**
-Zwraca wszystkie odkryte lokalizacje z zaznaczeniem, która jest aktualna.
-Lokalizacja - kiedy jest otwarta (rozkminic jak to bedzie).
-Opis.
-//TODO: Dodać event LocationRevealed - dodaje do znanych lokalizacji
+**GET: investigações/{investigationId}/detectives/{detectiveId}/locations**
+Retorna todos os locais descobertos com uma indicação de qual está atualizado.
+Localização - quando está aberto (decifrar como será).
+Descrição.
+//TODO: Add event LocationRevealed - adiciona a locais conhecidos
 
 
-**GET: investigations/{investigationId}/detectives/{detectiveId}/characters**
-Zwraca osoby, o których wie detektyw. Opis, czy żyją.
+**GET: investigações/{investigationId}/detectives/{detectiveId}/characters**
+Retorna pessoas que o detetive conhece. Descrição se estiverem vivos.
 
 
-**GET: investigations/{investigationId}/detectives/{detectiveId}/characters-locations**
-Zwraca lokalizacje danych osób, o których wie detektyw (unknown - jak nie wiadomo gdzie sa).
-Przemyslec czy to jednak nie bedzie czescia characters. A moze GraphQL w tym miejscu!?
+**GET: investigações/{investigationId}/detectives/{detectiveId}/characters-locations**
+Retorna as localizações das pessoas que o detetive conhece (desconhecidas - se você não souber onde elas estão).
+Pense se isso fará ou não parte dos personagens. Que tal GraphQL aqui!?
 
 
-**GET: investigations/{investigationId}/detectives/{detectiveId}/characters-phones**
-Zwraca osoby, do których można zadzwonić z jakiekolwiek miejsca. Zazwyczaj są to np. policyjni technicy.
+**GET: investigações/{investigationId}/detectives/{detectiveId}/characters-phones**
+Retorna pessoas que podem ser chamadas de qualquer lugar. Normalmente são, por exemplo, técnicos da polícia.
 
 
-**GET: investigations/{investigationId}/detectives/{detectiveId}/items**
-Zwraca przedmioty o jakich wie detektyw. 
-Z informacja czy je znalazl i gdzie.
-Kto jest w ich posiadaniu, jesli wie. Moze inny detektyw w multi?
+**GET: investigações/{investigationId}/detectives/{detectiveId}/items**
+Retorna itens que o detetive conhece.
+Com informações se ele os encontrou e onde.
+Quem os possui, se alguém souber. Talvez outro detetive no multiplayer?
 
 
 
-**GET: investigations/{investigationId}/detectives/{detectiveId}/commands**
-Wszystkie komendy jakie wykonał gracz wraz z rezultatem.
+**GET: investigações/{investigationId}/detectives/{detectiveId}/commands**
+Todos os comandos que o jogador executou com o resultado.
 
 
-SIMPLE VERSION,
+VERSÃO SIMPLES,
 ENDPOINTS:
 
-investigations/{investigationId} - investigation state based on events in JSON!
+investigações/{investigationId} - estado de investigação baseado em eventos em JSON!
 
 
 
-//EVENT:
-SCENARIO ID, INVESTIGATION ID itp.
+// EVENTO:
+ID DO CENÁRIO, ID DA INVESTIGAÇÃO, etc.
